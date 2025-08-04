@@ -11,7 +11,7 @@ return {
     workspaces = {
       {
         name = "myvault",
-        path = "/mnt/c/Users/Emi Nikolova/My Drive/My folder/Obsidian" -- full absolute Windows path
+        path = "/mnt/c/Users/Emi Nikolova/My Drive/My folder/Obsidian", -- full absolute Windows path
       },
     },
 
@@ -22,13 +22,13 @@ return {
     debug = true,
 
     daily_notes = {
-      folder = "",                -- folder inside vault for daily notes
+      folder = "", -- folder inside vault for daily notes
       date_format = "%Y-%m-%d",
-      template = "daily.md",      -- must be in templates folder
+      template = "daily.md", -- must be in templates folder
     },
 
     templates = {
-      subdir = "templates",       -- where your templates live
+      subdir = "templates", -- where your templates live
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },

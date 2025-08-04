@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>d1", function()
 end, { desc = "set dir: to Obsidian vault" })
 
 vim.keymap.set("n", "<leader>d2", function()
-  vim.cmd.cd("/mnt/c/Users/Emi Nikolova/pytest_fundamental")
+  vim.cmd.cd("~/repos/pytest_fundamental")
 end, { desc = "set dir: to pytest_fundamental" })
 
 vim.keymap.set("n", "<leader>d3", function()
@@ -82,7 +82,7 @@ vim.keymap.set("n", "<leader>ou", function()
         .nvim_buf_get_lines(0, ref_line - 1, ref_line, false)[1]
         :match("%[" .. vim.fn.escape(ref, "[]") .. "%]:%s*(.+)")
       if url and url:match("^https?://") then
-        vim.fn.system({ "xdg-open", url })
+        vim.fn.system({ "cmd.exe", "/c", "start", url })
         vim.notify("Opening URL: " .. url, vim.log.levels.INFO)
       else
         vim.notify("No valid URL found in reference", vim.log.levels.ERROR)
